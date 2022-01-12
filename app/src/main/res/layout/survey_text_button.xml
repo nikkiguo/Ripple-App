@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/buttonBlue"
+    android:textStyle="bold"
+    android:text="@string/residence_home_txt"
+    app:fontFamily="@font/montserrat">
+</TextView>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/name_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/nightSky"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation = "vertical">
+
+                    <TextView
+                        android:id="@+id/ripple_streaks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bermuda"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/ripple_streaks"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/nightSky"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="DAY 23!"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/nightSky"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/springGreen"
+                        app:cardElevation="0dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="@string/carbon_insights"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="#ffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="@string/witness_the_ripple_effect"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="12sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/chart"
+                        android:layout_width="290dp"
+                        android:layout_height="350dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/insight_today"
+                            android:layout_width="87.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_round"
+                            android:text="@string/today_button"
+                            android:textColor="#FFFF"
+                            android:onClick="onClick"
+                            app:rippleColor="?attr/colorOnPrimary"/>
+
+                        <Space
+                            android:layout_width="21.875dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/insight_week"
+                            android:layout_width="87.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_round"
+                            android:text="@string/week_button"
+                            android:textColor="#FFFF"
+                            android:onClick="onClick"
+                            app:rippleColor="?attr/colorOnPrimary"/>
+
+                        <Space
+                            android:layout_width="21.875dp"
+                            android:layout_height="match_parent"/>
+
+                        <Button
+                            android:id="@+id/insight_month"
+                            android:layout_width="87.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_round"
+                            android:text="@string/month_button"
+                            android:textColor="#FFFF"
+                            android:onClick="onClick"
+                            app:rippleColor="?attr/colorOnPrimary"/>
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/blue"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="@string/carbon_footprint_breakdown"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFF"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_insight_border"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/bermuda" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/homeicon" />
+
+                        <TextView
+                            android:id="@+id/residence_breakdown"
+                            android:layout_width="230dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="@string/insert_some_insight_here"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_insight_border"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/springGreen" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            app:srcCompat="@drawable/vegan"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/food_breakdown"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/insert_some_insight_here" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_insight_border"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/blue" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            app:srcCompat="@drawable/automobile"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/transport_breakdown"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/insert_some_insight_here" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_insight_border"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/buttonBlue" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            app:srcCompat="@drawable/commerce"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/commerce_breakdown"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/insert_some_insight_here" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

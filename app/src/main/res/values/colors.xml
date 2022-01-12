@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bermuda">#91D4C2</color>
+    <color name="springGreen">#45BB89</color>
+    <color name="blue">#3D82AC</color>
+    <color name="nightSky">#003853</color>
+    <color name="buttonBlue">#476794</color>
+
+
+</resources>

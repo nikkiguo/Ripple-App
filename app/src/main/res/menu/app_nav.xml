@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_home"
+        android:title="@string/stats"
+        android:icon="@drawable/pie_chart" />
+    <item android:id="@+id/action_compete"
+        android:title="@string/compete"
+        android:icon="@drawable/people" />
+    <item android:id="@+id/action_fun"
+        android:title="@string/fun"
+        android:icon="@drawable/happy"
+        android:actionLayout="@layout/activity_main"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/settings" />
+</menu>
