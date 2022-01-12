@@ -1,5 +1,5 @@
 # Ripple App
-A carbon-tracking mobile app built in Android Studio with features such as daily activity input, data visualization, and sustainability tips.
+An Android carbon-tracking mobile app built with features such as daily activity input, data visualization, and sustainability tips.
 
 ## App Onboarding
 A preliminary survey and information guide.
