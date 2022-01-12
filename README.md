@@ -13,4 +13,4 @@ Current tracking includes products, vehicle/air travel, and services.
 View insights and tips on living a sustainable lifestyle. As well, view methodology referenced for calculations.
 ![image](https://user-images.githubusercontent.com/46271636/149045313-419677c4-4b1d-489a-a513-f04860d34681.png)
 
-The Ripple. app also has a [landing page](https://codepen.io/nivyg/full/RwLqrNa) with a project pitch.
+The Ripple app also has a [landing page](https://codepen.io/nivyg/full/RwLqrNa) with a project pitch.
