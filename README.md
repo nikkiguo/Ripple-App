@@ -6,7 +6,7 @@ A preliminary survey and information guide.
 ![image](https://user-images.githubusercontent.com/46271636/149045121-f1da79ff-b188-4ce1-b9fd-f9dcc8f43753.png)
 
 ## Tracking
-Current tracking includes products, vehicle, air travel, and services.
+Current tracking includes products, vehicle/air travel, and services.
 ![image](https://user-images.githubusercontent.com/46271636/149045263-75abf834-acee-4985-a888-7c2dd9834eb5.png)
 
 ## Visualize and challenge
